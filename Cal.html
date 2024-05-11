@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>NaTu Calculator</h1>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="display" readonly>
+
+            <div class="row">
+
+                <button style="background-color:blue" onclick="clearDisplay()">CL</button>
+                <button style="background-color:blue" onclick="deleteLastChar()">DEL</button>
+                <button style="background-color:green" onclick="percentageDisplay('%')">%</button>
+                <button style="background-color:orange" onclick="appendToDisplay('/')">/</button>
+            </div>
+            <div>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button style="background-color:red" onclick="appendToDisplay('(')">(</button>
+            </div>
+
+
+            <div>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button style="background-color:aqua" onclick="appendToDisplay(')')">)</button>
+            </div>
+
+            <div>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button style="background-color:orange" onclick="appendToDisplay('+')">+</button>
+                <button style="background-color:aqua" onclick="calculatePi('&#8508(')">&#8508</button>
+            </div>
+
+            <div>
+                <button style="background-color:aqua" onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('00')">00</button>
+                <button style="background-color:aqua" onclick="calculateFactorial('Factorial')">&excl;</button>
+                <button style="background-color:aqua" onclick="calculateSqrt()">√</button>
+            </div>
+
+            <div>
+
+                <button style="background-color:aqua"onclick="calculateTrig('sin')">sin</button>
+                <button style="background-color:aqua"onclick="calculateTrig('cos')">cos</button>
+                <button style="background-color:aqua" onclick="calculateTrig('tan')">tan</button>
+                <button style="background-color:aqua" onclick="calculateExp('exp')">x<sup>2</sup></button>
+            </div>
+            <div>
+                <button style="background-color:aqua"onclick="calculatePow('pow')">x<sup>n</sup></button>
+                <button style="background-color:aqua" onclick="calculateLog ('log')">log</button>
+                <button style="background-color:aqua" onclick="calculateLn ('ln')">ln</button>
+                <button style="background-color: brown;" onclick="calculate()">=</button>
+
+
+            </div>
+
+        </div>
+    </div>
+    </input>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
